@@ -1,0 +1,54 @@
+body {
+    background-image: linear-gradient(#FFCCD2, #FDD2BF, #FFF9B6);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  hr {
+    border-style: none none none;
+    border-top-style: dotted;
+    border-color: #FF9292;
+    border-width: 8px;
+    width: 1500px;
+  }
+  h1{
+    color: #DF5E5E;
+  }
+  h2{
+    color: #FF7777;
+  }
+  h3{
+    color: #9E7777;
+  }
+  h4{
+    color: #6F4C5B;
+  }
+  p {
+    text-align: justify; /* Вирівнювання по ширині */
+    color: #1C0C5B; /* Колір тексту абзаців */
+  }
+/********************************** CLASS SELECTORS ******************************************************/
+  .pinkh1 {
+    color: #6B4F4F /* Колір тексту */
+  }
+  .gradp {
+    background-image: linear-gradient(#F6EABE, #F6D7A7); /* колір фону */
+    background-size: cover; /*розмір фону елемента і масштабує зображення більше */
+    background-repeat: no-repeat; /* Зображення не повторюється*/
+  }
+  /********* PSEUDO-CLASS *************************/
+a:hover {
+  color: violet; /*світиться, коли користувач взаємодіє з елементом */
+}
+a:link {
+  color: #6F4C5B; /*представляє елемент, який ще не відвідували*/
+  }
+img:hover {
+  background-color: #6F4C5B; /*світиться, коли користувач взаємодіє з елементом*/
+}
+  /*********ID*************************/
+#par {
+  font-family:Times, serif; /*назва шрифту*/
+  font-style: normal;/*шрифт повинен бути стилізований відповідно до норми*/
+  line-height: 150%;/*висота рядка*/
+}
