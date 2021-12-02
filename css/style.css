@@ -1,15 +1,13 @@
-body {
-    background-image: linear-gradient(#FFCCD2, #FDD2BF, #FFF9B6);
-    background-size: cover;
-    background-repeat: no-repeat;
+  body {
+    display: flex;
+    flex-direction: column;
   }
-
   hr {
     border-style: none none none;
     border-top-style: dotted;
     border-color: #FF9292;
     border-width: 8px;
-    width: 1500px;
+    width: 1000px;
   }
   h1{
     color: #DF5E5E;
