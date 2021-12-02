@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="height=device-height, initial-scale=1.0"><!-- Висота по висоті девайсу -->
+  <title>🌸Task🌸</title>
+  <style>
+    html,
+    body,
+    footer{
+      margin: 0; /*margin CSS встановлює область поля з усіх чотирьох сторін елемента.*/
+      box-sizing: border-box;/*/*Властивість CSS "box-sizing" визначає спосіб обчислення загальної ширини та висоти елемента.
+      "border-box" наказує браузеру враховувати будь-які межі та відступи у значеннях, які ви вказуєте для ширини та висоти елемента.*/*/
+      padding: 0px;/*відступ*/
+    }
+    body{
+      display: flex;/*визначає, чи розглядається елемент як блоковий чи вбудований елемент, а також макет, який використовується для його дочірніх елементів*/
+      flex-direction: column;/*спосіб розміщення елементів flex в контейнері flex*/
+      font-family: Georgia, serif;/*шрифт*/
+      font-size: 20px;/*розмір шрифту*/
+    }
+    div.full{
+      background-image: url('./rex.jpg');/*фонове зображення*/
+      background-size: cover;/*покриття фоновим зображенням*/
+    }
+    nav {
+      display: flex;/*визначає, чи розглядається елемент як блоковий чи вбудований елемент, а також макет, який використовується для його дочірніх елементів*/
+      height: 75px;/*висота*/
+      flex-direction: row;/*спосіб розміщення елементів flex в контейнері flex*/
+      justify-content: space-around;/*визначає, як браузер розподіляє простір між елементами вмісту та навколо них вздовж головної осі контейнера flex*/
+      align-items: center;
+    }
+    header {
+      display: flex;/*визначає, чи розглядається елемент як блоковий чи вбудований елемент, а також макет, який використовується для його дочірніх елементів*/
+      height: 400px;/*висота*/
+      flex-direction: column;/*спосіб розміщення елементів flex в контейнері flex*/
+      justify-content: center;/*визначає, як браузер розподіляє простір між елементами вмісту та навколо них вздовж головної осі контейнера flex*/
+    }
+    .o{
+      padding: 10px;/*відступ*/
+      border: 1px solid black;/*межа елементу*/
+      border-radius: 20px;/*заокруглює кути зовнішнього краю межі елемента*/
+      cursor: pointer;/*При наведенні курсора на бокс курсор змінюється на руку*/
+    }
+    div.info{
+      position: relative;
+      display: block;
+      text-align: center;/*розміщення тексту*/
+      align-items: center;
+      font-size: 25px;/*розмір шрифту*/
+
+    }
+    .op{
+      cursor: pointer;/*При наведенні курсора на бокс курсор змінюється на руку*/
+      border-radius: 20px;/*заокруглює кути зовнішнього краю межі елемента*/
+      border: 1px solid black;/**/
+      margin: 0 auto;/*margin CSS встановлює область поля з усіх чотирьох сторін елемента*/
+      width: 10%;/*ширина*/
+      padding: 10px;/*відступ*/
+      font-size: 20px;/*розмір шрифту*/
+    }
+
+    section.greybox {
+
+      box-sizing: border-box;/*Властивість CSS "box-sizing" визначає спосіб обчислення загальної ширини та висоти елемента.
+      "border-box" наказує браузеру враховувати будь-які межі та відступи у значеннях, які ви вказуєте для ширини та висоти елемента.*/
+      margin-top: 75px;
+      /*поле навколо рамки відступ зверху*/
+      margin-bottom: 70px;
+      /*поле навколо рамки відступ знизу*/
+      margin-left: 100px;
+      /*поле навколо рамки відступ зліва*/
+      margin-right: 100px;
+      /*поле навколо рамки відступ зправа*/
+      display: flex;
+      /* використання flexbox, це призводить до того, що елемент <section> стає flexbox, а його елементи перетворюються на flex-елементи.*/
+      flex-direction: column;
+      /* у якому напрямку розташовані дочірні елементи flexbox, рощміщення в колонку */
+      justify-content: space-between;
+      /* "justify-content" контролює розташування елементів flex на головній осі, "space-between" він не залишає жодного простору на обох кінцях,рощміщення по краям */
+    }
+
+    p {
+      display: flex;
+      margin-bottom: 75px;
+      /*поле навколо рамки відступ знизу*/
+      /*поле навколо рамки відступ зверху*/
+      flex-direction: column;/*у якому напрямку розташовані дочірні елементи flexbox*/
+      align-items: center;
+      line-height: 2.5;/*встановлює висоту рядка*/
+    }
+    .over{
+      color: black;
+      margin: 10px;/*margin CSS встановлює область поля з усіх чотирьох сторін елемента*/
+      text-align: center;/*розміщення тексту*/
+      font-size: 30px;
+    }
+    .overview{
+      color: black;/*колір*/
+      text-align: center;/*розміщення тексту*/
+      width: 80%;/*ширина*/
+      font-size: 20px;/*розмір шрифту*/
+    }
+    div.two {
+      display: flex;
+      /* роміщення елементів*/
+      flex-direction: row;
+      /*в колонку*/
+      justify-content: space-between;
+      /* видалення пустоти по краю */
+    }
+
+    div.orangebox {
+      display: flex;
+      /*Висота*/
+      width: 48%;
+      /*Ширина*/
+      flex-direction: column;
+      align-items: center;
+    }
+    div.orangebox2 {
+      display: flex;
+      /*Висота*/
+      width: 48%;
+      /*Ширина*/
+      flex-direction: column;
+      align-items: center;
+    }
+    .pic{
+       width: 350px;
+       height:350px;
+    }
+    .orangetitle{
+      color: black;
+      margin: 10px;
+      text-align: center;
+      width: 100%;
+      font-weight: bold;
+    }
+    .orangetext{
+      color: black;
+      margin: 10px 0;
+      text-align: center;
+      line-height: 1.5;
+    }
+    div.darkgreybox {
+      display: flex;
+      height: 40px;
+      /*Висота*/
+      background-color: #E6DDC6;
+      /*Колір фону*/
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: black;
+    }
+
+    footer {
+      display: flex;
+      height: 100px;
+      /*Висота*/
+      background-color: #C2B8A3;
+      /*Колір фону*/
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      color: black;
+    }
+
+    @media (max-width: 350px) { /*У разі зменшення ширини екрану менше ніж 720 рх застосовую наступне:*/
+       .two {
+         flex-direction: column;
+         margin: 0 0 80px;
+       } /*margin - встановлюю відстань полів для елемента (0 - для верхнього, 0 - для правого і лівого, 80 рх - для нижнього); flex-direction - Визначає напрямок гнучких елементів (column - Гнучкі елементи відображаються вертикально у вигляді стовпця);*/
+       .orangebox {
+         margin-bottom: 60px;
+         margin-right: 0;
+       } /*margin-right - Встановлює відстань правого поля елемента (0); margin-bottom - Встановлює відстань нижнього поля елемента (60 рх)*/
+       .orangebox2 {
+         margin-left: 0;
+       } /*margin-left - Встановлює відстань лівого поля елемента (0)*/
+     }
+  </style>
+</head>
+
+<body>
+  <div class="full">
+    <nav>
+      <div>Cornish Rex </div>
+      <div>Colors</div>
+      <div>Temperament</div>
+      <div class="o">Kitten Prices </div>
+    </nav>
+
+    <header>
+      <div class="info">
+         <h1>Cornish Rex</h1>
+         <div class="op">Overview</div>
+      </div>
+    </header>
+  </div>
+
+  <section class="greybox">
+    <span class="over">Personality</span>
+    <p>
+      <span class="overview">The Cornish Rex is a highly intelligent, affectionate and extroverted breed, notwithstanding its somewhat aloof and sophisticated appearance.
+        It is curious, inventive, playful and mischievous by nature, making it an endearing household companion and a wonderful pet. </span>
+    </p>
+    <div class="two">
+      <div class="orangebox">
+        <img class="pic" src="./cat.jpg" alt="Cat">
+        <div class="orangetitle">My personal opinion</div>
+        <div class="orangetext">The Cornish Rex is an adventurous animal that readily adapts to new situations and environments.
+          It will explore wherever - and whenever - it can.
+          It often will be seen jumping into or onto refrigerators, examining washing machines or climbing into open clothes driers.</div>
+      </div>
+      <div class="orangebox2">
+          <img class="pic" src="./kitty.jpg" alt="Cat">
+          <div class="orangetitle">Children & Other Pets</div>
+          <div class="orangetext">The active and social Cornish Rex is a perfect choice for families with children and cat-friendly dogs.
+            He will play fetch as well as any retriever, learns tricks easily and loves the attention he receives from children who treat him politely and with respect. </div>
+      </div>
+    </div>
+  </section>
+<div class="stick">
+  <div class="darkgreybox">
+    The Cornish Rex is an active and playful cat who loves to play fetch, catch and throw small toys.
+  </div>
+
+  <footer>
+    Sofiia Maliarenko 2021
+  </footer>
+</div>
+
+</body>
+
+</html>
