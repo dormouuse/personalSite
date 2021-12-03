@@ -8,11 +8,17 @@
   <title>🌸Task🌸</title>
   <style>
     html{
-      min-width: 850px;
+      min-width: 860px;
     }
-    html,
-    body,
-    footer{
+      body,
+      nav,
+      header,
+      footer,
+      section,
+      div,
+      h1,
+      h2,
+      p {
       margin: 0; /*margin CSS встановлює область поля з усіх чотирьох сторін елемента.*/
       box-sizing: border-box;/*/*Властивість CSS "box-sizing" визначає спосіб обчислення загальної ширини та висоти елемента.
       "border-box" наказує браузеру враховувати будь-які межі та відступи у значеннях, які ви вказуєте для ширини та висоти елемента.*/*/
@@ -131,10 +137,6 @@
       flex-direction: column;
       align-items: center;
     }
-    .pic{
-       width: 350px;
-       height:350px;
-    }
     .orangetitle{
       color: black;
       margin: 10px;
@@ -172,7 +174,7 @@
       color: black;
     }
 
-    @media (max-width: 350px) { /*У разі зменшення ширини екрану менше ніж 720 рх застосовую наступне:*/
+    @media (max-width: 720px) { /*У разі зменшення ширини екрану менше ніж 720 рх застосовую наступне:*/
        .two {
          flex-direction: column;
          margin: 0 0 80px;
@@ -184,6 +186,7 @@
        .orangebox2 {
          margin-left: 0;
        } /*margin-left - Встановлює відстань лівого поля елемента (0)*/
+
      }
   </style>
 </head>
@@ -213,14 +216,18 @@
     </p>
     <div class="two">
       <div class="orangebox">
-        <img class="pic" src="./cat.jpg" alt="Cat">
+        <div>
+          <img class="pic" src="./cat.jpg" alt="Cat" width="350px" height="350px">
+        </div>
         <div class="orangetitle">My personal opinion</div>
         <div class="orangetext">The Cornish Rex is an adventurous animal that readily adapts to new situations and environments.
           It will explore wherever - and whenever - it can.
           It often will be seen jumping into or onto refrigerators, examining washing machines or climbing into open clothes driers.</div>
       </div>
       <div class="orangebox2">
-          <img class="pic" src="./kitty.jpg" alt="Cat">
+        <div>
+          <img class="pic" src="./kitty.jpg" alt="Cat"width="350px" height="350px">
+        </div>
           <div class="orangetitle">Children & Other Pets</div>
           <div class="orangetext">The active and social Cornish Rex is a perfect choice for families with children and cat-friendly dogs.
             He will play fetch as well as any retriever, learns tricks easily and loves the attention he receives from children who treat him politely and with respect. </div>
